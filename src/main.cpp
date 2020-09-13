@@ -3,10 +3,10 @@
 #include <string>
 #include <stdio.h>
 #include <string.h>
-#include "transitions.h"
-#include "lexer.h"
+#include "lexer/transitions.h"
+#include "lexer/lexer.h"
 #include "test.h"
-#include "parser.h"
+#include "parser/parser.h"
 
 #define CMD_SIZE 100
 
@@ -24,8 +24,6 @@ int main(const int argc, const char* argv[]) {
     }
 
     if (strcmp(argv[1], "test_tree") == 0) {
-        std::cout << "HERE" << std::endl;
-        test_tree();
         return 0;
     }
 

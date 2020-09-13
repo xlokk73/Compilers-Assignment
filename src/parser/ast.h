@@ -1,7 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 
-#include "transitions.h"
+#include "../lexer/transitions.h"
 
 typedef struct node { 
     token data; 

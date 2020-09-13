@@ -16,6 +16,5 @@ void report(int n);
 
 void test_lexer();
 
-void test_tree();
 
 #endif

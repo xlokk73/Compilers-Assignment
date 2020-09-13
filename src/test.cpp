@@ -4,9 +4,9 @@
 #include <string>
 #include <stdio.h>
 #include <string.h>
-#include "transitions.h"
-#include "lexer.h"
-#include "tree.h"
+#include "lexer/transitions.h"
+#include "lexer/lexer.h"
+#include "parser/ast.h"
 #include "test.h"
 
 
@@ -824,40 +824,4 @@ void test_lexer() {
 
 
 
-}
-
-void test_tree() {
-    std::cout << "TESTING TREE" << std::endl;
-
-    token tok1;
-    tok1.type = identifier;
-    tok1.value = "blablabla";
-
-    AST* node1 = make_node(tok1, nullptr, nullptr);
-    std::cout << "Printing node 1:" << std::endl;
-    print_tree(node1);
-
-
-
-    token tok2;
-    tok2.type = keyword;
-    tok2.value = "let";
-
-    AST* node2 = make_node(tok2, nullptr, nullptr);
-    std::cout << "Printing node 2:" << std::endl;
-    print_tree(node2);
-
-
-    
-    token tok3;
-    tok3.type = rel_op;
-    tok3.value = ">=";
-
-    AST* head = make_node(tok3, node2, node1);
-    std::cout << "Printing head:" << std::endl;
-    print_tree(head);
-
-
-
-    destroy_tree(head);
 }
