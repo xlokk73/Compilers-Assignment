@@ -6,9 +6,34 @@
 #include "../lexer/lexer.h"
 #include "ast.h"
 
-:x
 extern FILE* input_stream;
 
-void set_stream(FILE* new_stream);
+class Parser {
 
-void advance();
+public:
+    explicit Parser(FILE* input_stream);
+    void advance();
+
+    FILE* input_stream;
+    Token current_token;
+    Token next_token();
+    
+    // Statement nodes
+    ASTStatementNode*       parse_statement();
+    ASTDeclarationNode*     parse_declaration_statement();
+    ASTAssignmentNode*      parse_assignment_statement();
+    ASTPrintNode*           parse_print_statement();
+    ASTReturnNode*          parse_return_statement();
+    ASTBlockNode*           parse_block();
+    ASTWhileNode*           parse_while_statement();
+
+    // Expression Nodes
+    ASTExpressionNode*      parse_expression();
+    ASTExpressionNode*      parse_simp_expression();
+    ASTExpressionNode*      parse_term();
+    ASTExpressionNode*      parse_factor();
+
+    // Parse Types
+    TYPE parse_type(std::string&);
+
+}

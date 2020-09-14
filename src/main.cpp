@@ -6,7 +6,7 @@
 #include "lexer/transitions.h"
 #include "lexer/lexer.h"
 #include "test.h"
-#include "parser/parser.h"
+//#include "parser/parser.h"
 
 #define CMD_SIZE 100
 
@@ -33,8 +33,8 @@ int main(const int argc, const char* argv[]) {
         return 0;
     }
 
-    set_stream(stream);
-    parse_program();
+   // set_stream(stream);
+   // parse_program();
 
     return 0;
 }

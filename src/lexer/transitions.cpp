@@ -24,31 +24,7 @@ std::string get_type(token_type e) {
         case comment: return "comment";
         case ssb: return "ssb";
         case esb: return "esb";
-
-        case statement: return "statement";
-        case rtrn_statement: return "rtrn_statement";
-        case print_statement: return "print_statement";
-        case while_statement: return "while_statement";
-        case for_statement: return "for_statement";
-        case expression: return "expression";
-        case simp_expression: return "simp_expression";
-        case var_decl: return "var_decl";
-        case block: return "block";
-        case if_head: return "if_head";
-        case if_block: return "if_block";
-        case for_head: return "for_head";
-        case for_block: return "for_block";
-        case for_extra: return "for_extra";
-        case func_head: return "func_head";
-        case func_block: return "func_block";
-        case func_extra: return "func_extra";
-        case formal_params: return "formal_params";
-        case formal_param: return "formal_param";
-        case func_call: return "func_call"; 
-        case actual_params: return "actual_params";
-        case sub_exp: return "sub_exp";
-        case unary: return "unary"; 
-        case array: return "array";
+        case eof: return "eof";
     }
 }
 
@@ -153,8 +129,12 @@ classifier char_cat(int ch) {
         return ssb_char;
     }
     else if(ch == ']') {
-        // std::cout << "CASE> esb_char" << std::endl;
+        // std::cout << "CASE: esb_char" << std::endl;
         return esb_char;
+    }
+    else if(ch == EOF) {
+        // std::cout << "CASE: eof_char" << std::endl;
+        return eof_char;
     }
 
     else {
@@ -243,6 +223,8 @@ token_type type(state* fin, std::string lexeme) {
         return ssb;
     case S25:
         return esb;
+    case S26:
+        return eof;
     default:
         return invalid;
     }
