@@ -6,8 +6,6 @@
 #include "../lexer/lexer.h"
 #include "ast.h"
 
-extern FILE* input_stream;
-
 class Parser {
 
 public:
@@ -15,8 +13,8 @@ public:
     void advance();
 
     FILE* input_stream;
-    Token current_token;
-    Token next_token();
+    token current_token;
+    token next_token;
     
     // Statement nodes
     ASTStatementNode*       parse_statement();
@@ -36,4 +34,6 @@ public:
     // Parse Types
     TYPE parse_type(std::string&);
 
-}
+};
+
+#endif

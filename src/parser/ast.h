@@ -2,72 +2,75 @@
 #define AST_H
 
 #include "../lexer/transitions.h"
+#include <string>
+#include <vector>
 
 enum TYPE {INT, REAL, BOOL, STRING};
 
 // Abstract Nodes
 class ASTNode {
-}
+};
 
 class ASTStatementNode : public ASTNode {
-}
+};
 
 class ASTExpressionNode : public ASTNode {
-}
+};
 
 // Nodes
 class ASTProgramNode :  public ASTNode {
 public:
-    explicit ASTProgrameNode(std::vector<ASTStatementNode*>;
-}
+    explicit ASTProgramNode(std::vector<ASTStatementNode*>);
+    std::vector<ASTStatementNode*> statements;
+};
 
-class ASTDeclerationNode : public ASTStatementNode {
+class ASTDeclarationNode : public ASTStatementNode {
 public: 
-    ASTDeclerationNode(TYPE, std::string, ASTExpressionNode*);
-    TYPE type:
+    ASTDeclarationNode(TYPE, std::string, ASTExpressionNode*);
+    TYPE type;
     std::string identifier;
-    ASTExprNode *expr;
-}
+    ASTExpressionNode *expr;
+};
 
 class ASTAssignmentNode : public ASTStatementNode {
 public:
-    ASTAssignmentNode(std::string, ASTExpressionNode);
+    ASTAssignmentNode(std::string, ASTExpressionNode*);
     std::string identifier;
     ASTExpressionNode *expr;
-}
+};
 
-class ASTPrintNode : public AstStatementNode {
+class ASTPrintNode : public ASTStatementNode {
 public:
-    explicit ASTPrintNode(ASTExprNode*);
-    ASTExprNode *expr;
-}
+    explicit ASTPrintNode(ASTExpressionNode*);
+    ASTExpressionNode *expr;
+};
 
 class ASTReturnNode : public ASTStatementNode {
 public:
     explicit ASTReturnNode(ASTExpressionNode*);
     ASTExpressionNode *expr;
-}
+};
 
 class ASTBlockNode : public ASTStatementNode {
 public:
-    explicit ASTBlock(std::vector<ASTStatementNode*>);
-    std::vector<ASTStatementNode*> statement;
+    ASTBlockNode(std::vector<ASTStatementNode*>);
+    std::vector<ASTStatementNode*> statements;
 };
 
 class ASTIfNode : public ASTStatementNode {
 public:
-    ASTIfNode(AASTExprNode*, ASTBlockNode*, ASTBlockNode* = nullptr);
+    ASTIfNode(ASTExpressionNode*, ASTBlockNode*, ASTBlockNode* = nullptr);
     ASTExpressionNode *condition;
     ASTBlockNode *if_block;
     ASTBlockNode *else_block;
-}
+};
 
-class ASTWhileNode(ASTExpressionNode*, ASTBlockNode*);
+class ASTWhileNode : public ASTStatementNode {
 public:
     ASTWhileNode(ASTExpressionNode*, ASTBlockNode*);
     ASTExpressionNode *condition;
     ASTBlockNode *block;
-}
+};
 
 // Expression Nodes
 template <typename T>
@@ -75,17 +78,17 @@ class ASTLiteralNode : public ASTExpressionNode {
 public:
     ASTLiteralNode(T val) : val(val){};
     T val;
-}
+};
 
 class ASTBinaryExpressionNode : public ASTExpressionNode {
 public:
-    ASTBinaryExpressionNode(std::string, ASTExpressionNode*, ASTExpressionNode);
+    ASTBinaryExpressionNode(std::string, ASTExpressionNode*, ASTExpressionNode*);
     std::string op;
-    ASTExpressionNode *left;
-    ASTExpressionNode *right;
-}
+    ASTExpressionNode* left;
+    ASTExpressionNode* right;
+};
 
-class ASTIdentifierNode : public ASTExpresionNode {
+class ASTIdentifierNode : public ASTExpressionNode {
 public:
     explicit ASTIdentifierNode(std::string);
     std::string identifier;
@@ -93,9 +96,9 @@ public:
 
 class ASTUnaryExpressionNode : public ASTExpressionNode {
 public:
-    ASTUnaryExpressionNode(std::string, ASTExprNode*);
+    ASTUnaryExpressionNode(std::string, ASTExpressionNode*);
     std::string unary_op;
-    ASTExprNode *expr;
+    ASTExpressionNode *expr;
 };
 
 #endif

@@ -1,1 +1,1 @@
-g++ -Wall -std=c++11 -o slc ./src/*.cpp ./src/lexer/*.cpp
+g++ -Wall -std=c++11 -o slc ./src/*.cpp ./src/lexer/*.cpp ./src/parser/*.cpp

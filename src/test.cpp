@@ -6,7 +6,7 @@
 #include <string.h>
 #include "lexer/transitions.h"
 #include "lexer/lexer.h"
-//#include "parser/ast.h"
+#include "parser/ast.h"
 #include "test.h"
 
 

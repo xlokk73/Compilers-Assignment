@@ -6,7 +6,7 @@
 #include "lexer/transitions.h"
 #include "lexer/lexer.h"
 #include "test.h"
-//#include "parser/parser.h"
+#include "parser/parser.h"
 
 #define CMD_SIZE 100
 
@@ -23,18 +23,14 @@ int main(const int argc, const char* argv[]) {
         return 0;
     }
 
-    if (strcmp(argv[1], "test_tree") == 0) {
-        return 0;
-    }
-
     FILE* stream = fopen (argv[1], "r");
     if(stream == nullptr) {
         std::cout << "Error: file does not exist" << std::endl;
         return 0;
     }
-
-   // set_stream(stream);
-   // parse_program();
+    
+    Parser parser(stream);
+    ASTProgramNode* program = parser.parse_program(); 
 
     return 0;
 }
