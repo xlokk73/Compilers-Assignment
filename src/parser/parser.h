@@ -10,6 +10,7 @@ class Parser {
 
 public:
     explicit Parser(FILE* input_stream);
+    ASTProgramNode* parse_program();
     void advance();
 
     FILE* input_stream;
@@ -17,12 +18,14 @@ public:
     token next_token;
     
     // Statement nodes
+
     ASTStatementNode*       parse_statement();
     ASTDeclarationNode*     parse_declaration_statement();
     ASTAssignmentNode*      parse_assignment_statement();
     ASTPrintNode*           parse_print_statement();
     ASTReturnNode*          parse_return_statement();
     ASTBlockNode*           parse_block();
+    ASTIfNode*              parse_if_statement();
     ASTWhileNode*           parse_while_statement();
 
     // Expression Nodes

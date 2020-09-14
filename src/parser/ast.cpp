@@ -4,7 +4,7 @@
 
 // Program Node
 
-ASTProgramNode::ASTProgramNode(std::vector<ASTStatementNode* statements) :
+ASTProgramNode::ASTProgramNode(std::vector<ASTStatementNode*> statements) :
     statements(std::move(statements))
 {}
 

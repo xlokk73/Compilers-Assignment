@@ -37,27 +37,68 @@ ASTStatementNode* Parser::parse_statement() {
         case keyword:
     
             if (current_token.value.compare("let") == 0)
-                return parse_decleration_statement(); 
+                return parse_declaration_statement(); 
                     
             else if (current_token.value.compare("print") == 0)
-                return parse_print_statement();
+                return nullptr;//parse_print_statement();
 
             else if (current_token.value.compare("if") == 0)
-                return parse_if_statement();
+                return nullptr;//parse_if_statement();
 
             else if (current_token.value.compare("while") == 0)
-                return parse_while_statement();
+                return nullptr;//parse_while_statement();
 
             else if (current_token.value.compare("return") == 0)
-                return parse_return_statement();
+                return nullptr;//parse_return_statement();
 
 
         case scb:
-            return parse_block();
+            return nullptr;//parse_block();
 
         default:
             std::cout << "Error: invalid statement starting: " << current_token.value << std::endl;
+            return nullptr;
     }
 }
 
-ASTDeclerationNode* Parser::parse
+ASTDeclarationNode* Parser::parse_declaration_statement() {
+    // Node attributes
+    TYPE type;
+    std::string id;
+    ASTExpressionNode* expr;
+    
+    // Consume identifier
+    advance();
+    if (current_token.type != identifier) {
+        std::cout << "Error: expecting identifier after 'let'" << std::endl;
+        return nullptr;
+    }
+
+    id = current_token.value;
+
+    advance();
+    if (current_token.type != colon) {
+        std::cout << "Error: expecting colon after identifier" << std::endl;
+        return nullptr;
+    }
+
+    advance();
+    type = INT;//parse_type(id); 
+
+    advance();
+    if (current_token.value.compare("=") != 0) {
+        std::cout << "Error: expecting equals" << std::endl;
+        return nullptr;
+    }
+
+    // Parse the right hand side
+    expr = nullptr;//parse_expression();
+
+    advance();
+    if (current_token.type != s_colon) {
+        std::cout << "Error: Expecting ';' after assignment" << std::endl;
+        return nullptr;
+    }
+
+    return new ASTDeclarationNode(type, id, expr);
+}
