@@ -30,7 +30,7 @@ public:
 
     // Expression Nodes
     ASTExpressionNode*      parse_expression();
-    ASTExpressionNode*      parse_simp_expression();
+    ASTExpressionNode*      parse_simple_expression();
     ASTExpressionNode*      parse_term();
     ASTExpressionNode*      parse_factor();
 

@@ -161,7 +161,7 @@ void test_lexer() {
     }
 
     /* Test 8 */
-    fill_file(file_name, "123.456");
+    fill_file(file_name, "123.456;");
     stream = fopen(file_name, "r");
 
     current_token = get_next_word(stream);
