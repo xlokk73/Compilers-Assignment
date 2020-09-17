@@ -36,8 +36,8 @@ classifier char_cat(int ch) {
     }
 
     else if((ch > 64 && ch < 91) || (ch > 96 && ch < 123)) {
-        // std::cout << "CASE: letter" << std::endl;
-        return letter;
+        // std::cout << "CASE: letter_char" << std::endl;
+        return letter_char;
     }
 
     else if(ch == ' ') {

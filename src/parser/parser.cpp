@@ -50,7 +50,7 @@ ASTStatementNode* Parser::parse_statement() {
                 return nullptr;//parse_while_statement();
 
             else if (current_token.value.compare("return") == 0)
-                return nullptr;//parse_return_statement();
+                return parse_return_statement();
 
 
         case scb:
@@ -84,7 +84,7 @@ ASTDeclarationNode* Parser::parse_declaration_statement() {
     }
 
     advance();
-    type = INT;//parse_type(id); 
+    type = parse_type(id); 
 
     advance();
     if (current_token.value.compare("=") != 0) {
@@ -93,7 +93,7 @@ ASTDeclarationNode* Parser::parse_declaration_statement() {
     }
 
     // Parse the right hand side
-    expr = nullptr;//parse_expression();
+    expr = parse_expression();
 
     advance();
     if (current_token.type != s_colon) {
@@ -157,10 +157,7 @@ ASTExpressionNode* Parser::parse_term() {
 }
 
 ASTExpressionNode* Parser::parse_factor() {
-    std::cout << "DEBUG: " << current_token.value << std::endl;
     advance();
-
-    std::cout << "DEBUG: " << current_token.value << std::endl;
 
     switch(current_token.type) {
         
@@ -192,8 +189,45 @@ ASTExpressionNode* Parser::parse_factor() {
         case add_op:
             return new ASTUnaryExpressionNode(current_token.value, parse_expression());
 
+        //case letter:
+        //    return new ASTLiteralNode<char>(current_token.value[0]);
+
         default:
             std::cout << "Error: expected expression" << std::endl;
             return nullptr;
     }
+}
+
+ASTReturnNode* Parser::parse_return_statement() {
+    
+    // Get expression to return
+    ASTExpressionNode* expr = parse_expression();
+
+    // Consume ';' token
+    advance();
+
+    // Make sure it's a ';'
+    if (current_token.type != s_colon) {
+        std::cout << "Error: Expected ';' after return statement" << std::endl;
+        return nullptr;
+    }
+    
+    return new ASTReturnNode(expr);
+}
+
+TYPE Parser::parse_type(std::string& identifier) {
+
+    if (current_token.value.compare("int") == 0)
+        return INT;
+
+    else if (current_token.value.compare("float") == 0)
+        return FLOAT;
+
+    else if (current_token.value.compare("bool") == 0) 
+        return BOOL;
+
+    else if (current_token.value.compare("char") == 0)
+        return CHAR;
+
+    std::cout << "Error: Expexted type for " << identifier << std::endl;
 }

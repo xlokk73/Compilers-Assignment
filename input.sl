@@ -1,1 +1,1 @@
-print 2.0 ;
+let x : int = 2;

@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-enum TYPE {INT, REAL, BOOL, STRING};
+enum TYPE {INT, FLOAT, BOOL, CHAR};
 
 // Abstract Nodes
 class ASTNode {
