@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/MacPorts 2020.54632_2) (preloaded format=pdflatex 2020.9.17)  17 SEP 2020 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/MacPorts 2020.54632_2) (preloaded format=pdflatex 2020.9.17)  17 SEP 2020 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,9 +211,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-[2] [3 <./images/numbers.png>] [4 <./images/identifiers.png> <./images/operator
-s.png>] [5 <./images/brackets.png> <./images/colons.png>] [6 <./images/comments
-.png>] (./Report.aux) ) 
+[2] [3 <./images/numbers.png>] [4 <./images/identifiers.png>] [5 <./images/oper
+ators.png>] [6 <./images/brackets.png> <./images/colons.png>] [7 <./images/comm
+ents.png>] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
  2607 strings out of 481722
  38190 string characters out of 5926628
@@ -222,14 +222,14 @@ Here is how much of TeX's memory you used:
  537506 words of font info for 41 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  34i,8n,60p,204b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
-</opt/local/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb>
-Output written on Report.pdf (6 pages, 1739656 bytes).
+</opt/local/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr17.pfb>
+Output written on Report.pdf (7 pages, 1741157 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
