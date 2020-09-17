@@ -172,6 +172,9 @@ ASTExpressionNode* Parser::parse_factor() {
             return new ASTLiteralNode<bool>(current_token.value == "true");
 
         case identifier:
+            if (next_token.type == scb) {
+                //return parse_array();
+            }
             return new ASTIdentifierNode(current_token.value);
 
         // Subexpression case
@@ -188,9 +191,6 @@ ASTExpressionNode* Parser::parse_factor() {
 
         case add_op:
             return new ASTUnaryExpressionNode(current_token.value, parse_expression());
-
-        //case letter:
-        //    return new ASTLiteralNode<char>(current_token.value[0]);
 
         default:
             std::cout << "Error: expected expression" << std::endl;
@@ -231,3 +231,4 @@ TYPE Parser::parse_type(std::string& identifier) {
 
     std::cout << "Error: Expexted type for " << identifier << std::endl;
 }
+

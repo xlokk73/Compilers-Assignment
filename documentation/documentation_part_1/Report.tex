@@ -97,6 +97,15 @@ as a vector.
 
 \subsubsection{Parser}
 The parser keeps track of the current token and the next token in line. This enables its look ahead functionalitiy thus classifying 
-as an LL(1) parser.
+as an LL(1) parser. It works by using the current token and the next token to check if the structure of the input program is as
+valid, reporting errors if it is not.
+
+In my implementation, functions such as parse\_if\_statement() were left out due to bad time managment from my end. However,
+these would have been very similar to the ones  already implemented, as the concept is mostly the same.
+
+\section{Question 3}
+This question was not attampted.
+
+\section{Question 4}
 
 \end{document}

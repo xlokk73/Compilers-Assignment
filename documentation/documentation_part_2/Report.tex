@@ -23,9 +23,13 @@
 
 \section{Question 1}
 \subsection{How the problem was tackled} 
+\subsubsection{Lexer}
 For this part, "char" was added to the keyword\_type function within transitions.cpp. This was done so that "char" is identified as a keyword.
 Apart from that, the square brackets where added to the transition tablle and classifier table. The states that the square brackets led to where added 
 to the token\_type() function and to the list of accepting states. The updated part of the FSA is included as a figure.
+\linebreak
+
+As for the square brackets, these were simply added to the tables. The updated part of the FSA is included as a listing.
 
 \begin{figure}[h]
     \centering
@@ -33,31 +37,17 @@ to the token\_type() function and to the list of accepting states. The updated p
     \caption{FSA (part concerned with updated brackets)}
 \end{figure}
 
-\section{Question 2}
-For this question, "char" was added to the function parse\_type(). This added support to initialize chars.
-As for the array, a function was created according to the EBNF: "array ::= <identifier> '[' [ integerLiteral ] ']'"
+\subsubsection{Parser}
+From the parser side, char was added to the TYPE enum. This would enable the semantic anayser to declare chars when a char value is 
+given after it. The array parsing line is included as a listing.
 
-The added function is listed as a figure. Furthermore, the array type was added tp the literal function.
-
-\begin{lstlisting}[caption="Parsing arrays"]
-AST* parse_array() {
-    tell("array");
-    AST* identifier_node = parse_identifier();
-    if ( identifier_node == nullptr )   { return nullptr; }
-
-    AST* l_square_node = parse_l_square();
-    if ( l_square_node == nullptr )     { return nullptr; }
-
-    AST* int_node = parse_integer_literal();
-
-    AST* r_square_node = parse_r_square();
-    if ( r_square_node == nullptr )     { return nullptr; }
-
-    token new_token;
-    new_token.type = array;
-    return make_node(new_token, identifier_node, int_node);
-}
+\begin{lstlisting}[caption=Array parsing]]
+case identifier:    
+    if (next\_token.type == scb) {
+        //return parse_array();
+    }
 \end{lstlisting}
 
-
+\section{Question 3}
+For this task, the EBNF was changed into Antlr format. The script within the Antlr/ is run to generate the outputs
 \end{document}
