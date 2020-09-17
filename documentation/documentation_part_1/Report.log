@@ -1,316 +1,75 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.14)  19 JUN 2020 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/MacPorts 2020.54632_2) (preloaded format=pdftex 2020.9.15)  17 SEP 2020 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Report.tex
 (./Report.tex
-LaTeX2e <2018-12-01>
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
-)
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count88
-\lst@gtempboxa=\box27
-\lst@token=\toks15
-\lst@length=\count89
-\lst@currlwidth=\dimen105
-\lst@column=\count90
-\lst@pos=\count91
-\lst@lostspace=\dimen106
-\lst@width=\dimen107
-\lst@newlines=\count92
-\lst@lineno=\count93
-\lst@maxwidth=\dimen108
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count94
-\lst@skipnumbers=\count95
-\lst@framebox=\box28
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2019/02/27 1.8b listings configuration
-))
-Package: listings 2019/02/27 1.8b (Carsten Heinz)
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-)
-(./Report.aux)
-\openout1 = `Report.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
-\scratchdimen=\dimen109
-\scratchbox=\box29
-\nofMPsegments=\count97
-\nofMParguments=\count98
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count99
-\MPscratchDim=\dimen110
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
-\everyMPtoPDFconversion=\toks17
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count102
-<Logo.jpg, id=1, 1020.6933pt x 352.1958pt>
-File: Logo.jpg Graphic file (type jpg)
-<use Logo.jpg>
-Package pdftex.def Info: Logo.jpg  used on input line 13.
-(pdftex.def)             Requested size: 390.0pt x 134.57204pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
-
-(./Report.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
-\tf@toc=\write3
-\openout3 = `Report.toc'.
-
- [1
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Logo.
-jpg>]
-<images/numbers.png, id=10, 922.44624pt x 604.2575pt>
-File: images/numbers.png Graphic file (type png)
-<use images/numbers.png>
-Package pdftex.def Info: images/numbers.png  used on input line 50.
-(pdftex.def)             Requested size: 390.0pt x 255.47372pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/identifiers.png, id=12, 907.39pt x 447.6725pt>
-File: images/identifiers.png Graphic file (type png)
-<use images/identifiers.png>
-Package pdftex.def Info: images/identifiers.png  used on input line 56.
-(pdftex.def)             Requested size: 390.0pt x 192.41345pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/operators.png, id=13, 928.46875pt x 642.4pt>
-File: images/operators.png Graphic file (type png)
-<use images/operators.png>
-Package pdftex.def Info: images/operators.png  used on input line 62.
-(pdftex.def)             Requested size: 390.0pt x 269.84537pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/brackets.png, id=14, 884.30376pt x 592.2125pt>
-File: images/brackets.png Graphic file (type png)
-<use images/brackets.png>
-Package pdftex.def Info: images/brackets.png  used on input line 68.
-(pdftex.def)             Requested size: 390.0pt x 261.17973pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/colons.png, id=15, 899.36pt x 541.02126pt>
-File: images/colons.png Graphic file (type png)
-<use images/colons.png>
-Package pdftex.def Info: images/colons.png  used on input line 75.
-(pdftex.def)             Requested size: 390.0pt x 234.60762pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/comments.png, id=16, 894.34125pt x 506.89375pt>
-File: images/comments.png Graphic file (type png)
-<use images/comments.png>
-Package pdftex.def Info: images/comments.png  used on input line 81.
-(pdftex.def)             Requested size: 390.0pt x 221.04616pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
- [2]
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
- [3 <./images/numbers.png>] [4 <./images/identifiers.png>]
-<images/return_statement_parsing.png, id=30, 552.0625pt x 270.00874pt>
-File: images/return_statement_parsing.png Graphic file (type png)
-<use images/return_statement_parsing.png>
-Package pdftex.def Info: images/return_statement_parsing.png  used on input lin
-e 142.
-(pdftex.def)             Requested size: 390.0pt x 190.7517pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./images/operators.png>] [6 <./images/brackets.png>] [7 <./images/colons.pn
-g>] [8 <./images/comments.png>] [9 <./images/return_statement_parsing.png>]
-[10] [11] [12]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 344.
-
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 344.
-<images/for_tree.png, id=61, 930.47626pt x 655.44875pt>
-File: images/for_tree.png Graphic file (type png)
-<use images/for_tree.png>
-Package pdftex.def Info: images/for_tree.png  used on input line 355.
-(pdftex.def)             Requested size: 390.0pt x 274.71652pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/if_tree.png, id=62, 862.22125pt x 598.235pt>
-File: images/if_tree.png Graphic file (type png)
-<use images/if_tree.png>
-Package pdftex.def Info: images/if_tree.png  used on input line 361.
-(pdftex.def)             Requested size: 390.0pt x 270.59076pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/func_tree.png, id=63, 763.85374pt x 614.295pt>
-File: images/func_tree.png Graphic file (type png)
-<use images/func_tree.png>
-Package pdftex.def Info: images/func_tree.png  used on input line 367.
-(pdftex.def)             Requested size: 390.0pt x 313.64249pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14 <./images/for_tree.png>] [15 <./images/if_tree.png>] [16 <./images/fun
-c_tree.png>] (./Report.aux) ) 
-Here is how much of TeX's memory you used:
- 3408 strings out of 492616
- 47883 string characters out of 6129481
- 372103 words of memory out of 5000000
- 7295 multiletter control sequences out of 15000+600000
- 9155 words of font info for 32 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,9n,58p,273b,1695s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti12.pfb>
-Output written on Report.pdf (16 pages, 2787579 bytes).
+! Undefined control sequence.
+l.1 \documentclass
+                  [a4paper, 12pt]{article}
+? 
+! Undefined control sequence.
+l.2 \usepackage
+               {graphicx}
+? 
+! Undefined control sequence.
+l.3 \usepackage
+               {listings}
+? 
+! Undefined control sequence.
+l.5 \setlength
+              \parindent{24pt}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   {
+l.5 \setlength\parindent{
+                         24pt}
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   {
+l.5 \setlength\parindent{
+                         24pt}
+? 
+! Undefined control sequence.
+l.7 \lstset
+           {language=c++,breaklines=true, frame=single}
+? 
+! Undefined control sequence.
+l.9 \begin
+          {document}
+? 
+! Undefined control sequence.
+l.11 \begin
+           {figure}
+? 
+! Undefined control sequence.
+l.13     \includegraphics
+                         [width=1\textwidth]{Logo}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.13     \includegraphics[
+                          width=1\textwidth]{Logo}
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.13     \includegraphics[
+                          width=1\textwidth]{Logo}
+? 
+! Undefined control sequence.
+l.13     \includegraphics[width=1\textwidth
+                                           ]{Logo}
+? 
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] )</opt/local/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Report.pdf (1 page, 16499 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 12 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
